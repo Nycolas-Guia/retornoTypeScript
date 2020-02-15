@@ -10,4 +10,11 @@ namespace empresa{
      c.setIdade(50);
      c.setLimite(3000);
      c.setSaldo(2000);
+
+     document.getElementById("nomeC").textContent = c.getNome();
+     document.getElementById("cpfC").textContent = c.getCpf();
+     document.getElementById("codC").textContent = c.getCodCliente().toString();
+     document.getElementById("idadeC").textContent = c.getIdade().toString();
+     document.getElementById("limiteC").textContent = "R$ "+c.getLimite().toString();
+     document.getElementById("saldoC").textContent = "R$ "+c.getSaldo().toString();
 }
