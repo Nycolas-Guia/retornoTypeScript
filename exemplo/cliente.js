@@ -16,8 +16,10 @@ var empresa;
 (function (empresa) {
     var Cliente = /** @class */ (function (_super) {
         __extends(Cliente, _super);
-        function Cliente() {
-            return _super !== null && _super.apply(this, arguments) || this;
+        function Cliente(nome, cpf, cod) {
+            var _this = _super.call(this, nome, cpf) || this;
+            _this.codCliente = cod;
+            return _this;
         }
         Cliente.prototype.getSaldo = function () {
             return this.saldo;
@@ -39,4 +41,5 @@ var empresa;
         };
         return Cliente;
     }(empresa.Pessoa));
+    empresa.Cliente = Cliente;
 })(empresa || (empresa = {}));
