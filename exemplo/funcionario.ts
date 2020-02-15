@@ -1,13 +1,8 @@
 namespace empresa{
     export class Funcionario extends Pessoa{
-        private valorDia: number|undefined;
-        private codFuncionario: number|undefined;
-
-        constructor(nome:string, cpf:string, cod:number){
-        super(nome,cpf);
-        this.codFuncionario = cod;
-    }
-
+        private valorDia: number;
+        private codFuncionario: number;
+    
         getValorDia():number|undefined{
             return this.valorDia;
         }
@@ -22,6 +17,10 @@ namespace empresa{
 
         setCodFuncionario(codFuncionario:number):void{
             this.codFuncionario = codFuncionario;
+        }
+
+        calcularSalario(): number{
+            return this.valorDia * 30;
         }
     } 
 }

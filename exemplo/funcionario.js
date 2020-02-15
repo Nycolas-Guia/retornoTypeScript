@@ -16,10 +16,8 @@ var empresa;
 (function (empresa) {
     var Funcionario = /** @class */ (function (_super) {
         __extends(Funcionario, _super);
-        function Funcionario(nome, cpf, cod) {
-            var _this = _super.call(this, nome, cpf) || this;
-            _this.codFuncionario = cod;
-            return _this;
+        function Funcionario() {
+            return _super !== null && _super.apply(this, arguments) || this;
         }
         Funcionario.prototype.getValorDia = function () {
             return this.valorDia;
@@ -32,6 +30,9 @@ var empresa;
         };
         Funcionario.prototype.setCodFuncionario = function (codFuncionario) {
             this.codFuncionario = codFuncionario;
+        };
+        Funcionario.prototype.calcularSalario = function () {
+            return this.valorDia * 30;
         };
         return Funcionario;
     }(empresa.Pessoa));
