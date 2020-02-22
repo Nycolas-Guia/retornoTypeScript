@@ -17,3 +17,6 @@ Comando: npm install -s live-server
 
 O live server será usado para usar a porta 3000 para rodar a aplicação.
 
+## TypeScript para JavaScript
+
+Comando: tsc -w

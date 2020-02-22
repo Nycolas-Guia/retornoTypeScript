@@ -1,9 +1,9 @@
 namespace empresa{
-    class Gerente extends Funcionario{
-        private setor: String;
+    export class Gerente extends Funcionario{
+        private setor: string;
 
-        getSetor(): String{
-            return this.getSetor();
+        getSetor(): string{
+            return this.setor;
         }
 
         setSetor(setor:string):void{
@@ -11,7 +11,8 @@ namespace empresa{
         }
 
         calcularSalario(): number{
-            return (this.getValorDia() * 30) + (this.getValorDia()*0.3);
+            return (this.getValorDia() * 30) + (this.getValorDia()*0.3) ;
         }
-    } 
+
+    }
 }
