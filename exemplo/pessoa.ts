@@ -15,23 +15,24 @@ namespace empresa{
         }
 
         //mostra o valor
-        getNome():string|undefined{
+        getNome():string{
             return this.nome;
         }
-        
+
         //altera o valor
         setNome(nome:string):void{
             this.nome = nome;
         }
-
-         getIdade():number|undefined{
+        
+        getIdade():number|undefined{
             return this.idade;
         }
-        
+
+        //altera o valor
         setIdade(idade:number):void{
             this.idade = idade;
         }
 
-
+       
     }
 }

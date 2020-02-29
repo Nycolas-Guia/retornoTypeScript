@@ -1,5 +1,5 @@
 namespace empresa{
-    class Empresa{
+    export class Empresa{
         private nomeEmpresa:string;
         private atividade:string;
         private cidade:string;
@@ -22,7 +22,7 @@ namespace empresa{
             this.atividade = atividade;
         }
 
-        getCidade():string{
+         getCidade():string{
             return this.cidade;
         }
 
@@ -33,7 +33,7 @@ namespace empresa{
         addCliente(cliente:Cliente):void{
             this.clientes.push(cliente);
         }
-        
+
         addFuncionario(funcionario:Funcionario):void{
             this.funcionarios.push(funcionario);
         }
@@ -45,5 +45,7 @@ namespace empresa{
         getFuncionario(){
             return this.funcionarios;
         }
+            
     }
+
 }

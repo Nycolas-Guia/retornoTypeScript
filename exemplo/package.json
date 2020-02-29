@@ -1,7 +1,7 @@
 {
   "name": "exemplo",
   "version": "1.0.0",
-  "description": "Aplicação de example",
+  "description": "Aplicação de exemplo",
   "main": "index.js",
   "scripts": {
     "start": "live-server"

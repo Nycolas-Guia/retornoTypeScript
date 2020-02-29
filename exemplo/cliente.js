@@ -1,45 +1,29 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 var empresa;
 (function (empresa) {
-    var Cliente = /** @class */ (function (_super) {
-        __extends(Cliente, _super);
-        function Cliente(nome, cpf, cod) {
-            var _this = _super.call(this, nome, cpf) || this;
-            _this.codCliente = cod;
-            return _this;
+    class Cliente extends empresa.Pessoa {
+        constructor(nome, cpf, cod) {
+            super(nome, cpf);
+            this.codCliente = cod;
         }
-        Cliente.prototype.getSaldo = function () {
+        getSaldo() {
             return this.saldo;
-        };
-        Cliente.prototype.setSaldo = function (saldo) {
+        }
+        setSaldo(saldo) {
             this.saldo = saldo;
-        };
-        Cliente.prototype.getLimite = function () {
+        }
+        getLimite() {
             return this.limite;
-        };
-        Cliente.prototype.setLimite = function (limite) {
+        }
+        setLimite(limite) {
             this.limite = limite;
-        };
-        Cliente.prototype.getCodCliente = function () {
+        }
+        getCodCliente() {
             return this.codCliente;
-        };
-        Cliente.prototype.setCodCliente = function (codCliente) {
+        }
+        setCodCliente(codCliente) {
             this.codCliente = codCliente;
-        };
-        return Cliente;
-    }(empresa.Pessoa));
+        }
+    }
     empresa.Cliente = Cliente;
 })(empresa || (empresa = {}));
