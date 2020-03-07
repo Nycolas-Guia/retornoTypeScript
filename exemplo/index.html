@@ -5,33 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Teste Aula</title>
+    <title>Hospital</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                 <h2>Instancia de Pessoa</h2>
-            </div>
-        </div>
-        <div class="row">
-           
-            <div class="col-sm">
-                <h3>Nome:</h3>
-                <span id="nome"></span>
-            </div>
-            <div class="col-sm">
-                <h3>CPF:</h3>
-                <span id="cpf"></span>
-            </div>
-            <div class="col-sm">
-                <h3>Idade:</h3>
-                <span id="idade"></span>
+                 <h1>Informações Gerais</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-sm">
-                 <h2>Instancia de Cliente</h2>
+                 <h2>Hospital</h2>
             </div>
         </div>
         <div class="row">
@@ -39,20 +24,10 @@
             <div class="col-sm">
                 <table class="table">
                     <tr>
-                        <th>Cod.:</th>
                         <th>Nome</th>
-                        <th>CPF</th>
-                        <th>Saldo</th>
-                        <th>Limite</th>
-                        <th>Idade</th>
                     </tr>
                     <tr>
-                        <td id="codC"></td>
-                        <td id="nomeC"></td>
-                        <td id="cpfC"></td>
-                        <td id="saldoC"></td>
-                        <td id="limiteC"></td>
-                        <td id="idadeC"></td>  
+                        <td id="nomeH"></td> 
                     </tr>
                     
                 </table>
@@ -60,7 +35,7 @@
         </div>
          <div class="row">
             <div class="col-sm">
-                 <h2>Instancia de Funcionario</h2>
+                 <h2>Médicos</h2>
             </div>
         </div>
         <div class="row">
@@ -71,17 +46,15 @@
                         <th>Cod.:</th>
                         <th>Nome</th>
                         <th>CPF</th>
-                        <th>Valor Hora</th>
-                        <th>Salario</th>
-                        <th>Idade</th>
+                        <th>Crm</th>
+                        <th>Especialidade</th>
                     </tr>
                     <tr>
-                        <td id="codF"></td>
-                        <td id="nomeF"></td>
-                        <td id="cpfF"></td>
-                        <td id="valorDiaF"></td>
-                        <td id="salarioF"></td>
-                        <td id="idadeF"></td>  
+                        <td id="codM"></td>
+                        <td id="nomeM"></td>
+                        <td id="cpfM"></td>
+                        <td id="crmM"></td>
+                        <td id="especialidadeM"></td>
                     </tr>
                     
                 </table>
@@ -89,7 +62,7 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                 <h2>Instancia de Gerente</h2>
+                 <h2>Enfermeiros</h2>
             </div>
         </div>
         <div class="row">
@@ -100,68 +73,45 @@
                         <th>Cod.:</th>
                         <th>Nome</th>
                         <th>CPF</th>
-                        <th>Valor Hora</th>
-                        <th>Salario</th>
-                        <th>Idade</th>
-                        <th>Setor</th>
+                        <th>Coren</th>
                     </tr>
                     <tr>
-                        <td id="codG"></td>
-                        <td id="nomeG"></td>
-                        <td id="cpfG"></td>
-                        <td id="valorDiaG"></td>
-                        <td id="salarioG"></td>
-                        <td id="idadeG"></td>  
-                        <td id="setorG"></td>
-                    </tr>
-                    
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                 <h2>Instancia de Empresa</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <table class="table">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Atividade</th>
-                        <th>Cidade</th>
-                    </tr>
-                    <tr>
+                        <td id="codE"></td>
                         <td id="nomeE"></td>
-                        <td id="atividadeE"></td>
-                        <td id="cidadeE"></td>
+                        <td id="cpfE"></td>
+                        <td id="corenE"></td>
+                        </tr>
+                    
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                 <h2>Pacientes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <table class="table">
+                    <tr>
+                        <th>Cod.:</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                    </tr>
+                    <tr>
+                        <td id="codP"></td>
+                        <td id="nomeP"></td>
+                        <td id="cpfP"></td>
                     </tr> 
                 </table>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
-                 <h2>Funcionarios da Empresa</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <table class="table" id="tbFuncionario">
-                    <tr>
-                        <th>Nome</th>
-                        <th>Cod.:</th>
-                    </tr>
-                   
-                </table>
-            </div>
-        </div>
-        
     </div>
     <script src="pessoa.js"></script>
-    <script src="cliente.js"></script>
-    <script src="funcionario.js"></script>
-    <script src="gerente.js"></script>
-    <script src="empresa.js"></script>
-    <script src="implenta.js"></script>
+    <script src="hospital.js"></script>
+    <script src="medico.js"></script>
+    <script src="enfermeiro.js"></script>
+    <script src="paciente.js"></script>
+    <script src="implementa.js"></script>
 </body>
 </html>
